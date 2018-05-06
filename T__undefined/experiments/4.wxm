@@ -1,0 +1,43 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [wxMaxima: input   start ] */
+display2d:false$
+load(mnewton);
+mnewton(
+[
+omega*s1c1-10*c2c1+10*c1c1,
+(-10*s2c1)+10*s1c1-c1c1*omega,
+2*omega*s1c2-10*c2c2+10*c1c2,
+(-10*s2c2)+10*s1c2-2*c1c2*omega,
+3*omega*s1c3-10*c2c3+10*c1c3,
+(-10*s2c3)+10*s1c3-3*c1c3*omega,
+4*omega*s1c4-10*c2c4+10*c1c4,
+(-10*s2c4)+10*s1c4-4*c1c4*omega,
+10*x10-10*x20,
+c1c1*x30+c3c1*x10+(s1c3*s3c4)/2+(s1c4*s3c3)/2+(s1c2*s3c3)/2+(s1c3*s3c2)/2+(s1c1*s3c2)/2+(s1c2*s3c1)/2+omega*s2c1+(c1c3*c3c4)/2+(c1c4*c3c3)/2+(c1c2*c3c3)/2+(c1c3*c3c2)/2+(c1c1*c3c2)/2+(c1c2*c3c1)/2+c2c1-28*c1c1,
+s1c1*x30+s3c1*x10+(c1c3*s3c4)/2-(c1c4*s3c3)/2+(c1c2*s3c3)/2-(c1c3*s3c2)/2+(c1c1*s3c2)/2-(c1c2*s3c1)/2+s2c1+(c3c3*s1c4)/2-(c3c4*s1c3)/2+(c3c2*s1c3)/2-(c3c3*s1c2)/2+(c3c1*s1c2)/2-(c3c2*s1c1)/2-28*s1c1-c2c1*omega,
+c1c2*x30+c3c2*x10+(s1c2*s3c4)/2+(s1c1*s3c3)/2+(s1c4*s3c2)/2+(s1c3*s3c1)/2-(s1c1*s3c1)/2+2*omega*s2c2+(c1c2*c3c4)/2+(c1c1*c3c3)/2+(c1c4*c3c2)/2+(c1c3*c3c1)/2+(c1c1*c3c1)/2+c2c2-28*c1c2,
+s1c2*x30+s3c2*x10+(c1c2*s3c4)/2+(c1c1*s3c3)/2-(c1c4*s3c2)/2-(c1c3*s3c1)/2+(c1c1*s3c1)/2+s2c2+(c3c2*s1c4)/2+(c3c1*s1c3)/2-(c3c4*s1c2)/2-28*s1c2-(c3c3*s1c1)/2+(c3c1*s1c1)/2-2*c2c2*omega,
+c1c3*x30+c3c3*x10+(s1c1*s3c4)/2-(s1c1*s3c2)/2+(s1c4*s3c1)/2-(s1c2*s3c1)/2+3*omega*s2c3+(c1c1*c3c4)/2+(c1c1*c3c2)/2+(c1c4*c3c1)/2+(c1c2*c3c1)/2+c2c3-28*c1c3,
+s1c3*x30+s3c3*x10+(c1c1*s3c4)/2+(c1c1*s3c2)/2-(c1c4*s3c1)/2+(c1c2*s3c1)/2+s2c3+(c3c1*s1c4)/2-28*s1c3+(c3c1*s1c2)/2-(c3c4*s1c1)/2+(c3c2*s1c1)/2-3*c2c3*omega,
+c1c4*x30+c3c4*x10-(s1c1*s3c3)/2-(s1c2*s3c2)/2-(s1c3*s3c1)/2+4*omega*s2c4+(c1c1*c3c3)/2+(c1c2*c3c2)/2+(c1c3*c3c1)/2+c2c4-28*c1c4,
+s1c4*x30+s3c4*x10+(c1c1*s3c3)/2+(c1c2*s3c2)/2+(c1c3*s3c1)/2+s2c4-28*s1c4+(c3c1*s1c3)/2+(c3c2*s1c2)/2+(c3c3*s1c1)/2-4*c2c4*omega,
+x10*x30+x20-28*x10+(s1c4*s3c4)/2+(s1c3*s3c3)/2+(s1c2*s3c2)/2+(s1c1*s3c1)/2+(c1c4*c3c4)/2+(c1c3*c3c3)/2+(c1c2*c3c2)/2+(c1c1*c3c1)/2,
+(-c1c1*x20)-c2c1*x10+omega*s3c1-(s1c3*s2c4)/2-(s1c4*s2c3)/2-(s1c2*s2c3)/2-(s1c3*s2c2)/2-(s1c1*s2c2)/2-(s1c2*s2c1)/2+(8*c3c1)/3-(c1c3*c2c4)/2-(c1c4*c2c3)/2-(c1c2*c2c3)/2-(c1c3*c2c2)/2-(c1c1*c2c2)/2-(c1c2*c2c1)/2,
+(-s1c1*x20)-s2c1*x10+(8*s3c1)/3-(c1c3*s2c4)/2+(c1c4*s2c3)/2-(c1c2*s2c3)/2+(c1c3*s2c2)/2-(c1c1*s2c2)/2+(c1c2*s2c1)/2-(c2c3*s1c4)/2+(c2c4*s1c3)/2-(c2c2*s1c3)/2+(c2c3*s1c2)/2-(c2c1*s1c2)/2+(c2c2*s1c1)/2-c3c1*omega,
+(-c1c2*x20)-c2c2*x10+2*omega*s3c2-(s1c2*s2c4)/2-(s1c1*s2c3)/2-(s1c4*s2c2)/2-(s1c3*s2c1)/2+(s1c1*s2c1)/2+(8*c3c2)/3-(c1c2*c2c4)/2-(c1c1*c2c3)/2-(c1c4*c2c2)/2-(c1c3*c2c1)/2-(c1c1*c2c1)/2,
+(-s1c2*x20)-s2c2*x10+(8*s3c2)/3-(c1c2*s2c4)/2-(c1c1*s2c3)/2+(c1c4*s2c2)/2+(c1c3*s2c1)/2-(c1c1*s2c1)/2-(c2c2*s1c4)/2-(c2c1*s1c3)/2+(c2c4*s1c2)/2+(c2c3*s1c1)/2-(c2c1*s1c1)/2-2*c3c2*omega,
+(-c1c3*x20)-c2c3*x10+3*omega*s3c3-(s1c1*s2c4)/2+(s1c1*s2c2)/2-(s1c4*s2c1)/2+(s1c2*s2c1)/2+(8*c3c3)/3-(c1c1*c2c4)/2-(c1c1*c2c2)/2-(c1c4*c2c1)/2-(c1c2*c2c1)/2,
+(-s1c3*x20)-s2c3*x10+(8*s3c3)/3-(c1c1*s2c4)/2-(c1c1*s2c2)/2+(c1c4*s2c1)/2-(c1c2*s2c1)/2-(c2c1*s1c4)/2-(c2c1*s1c2)/2+(c2c4*s1c1)/2-(c2c2*s1c1)/2-3*c3c3*omega,
+(-c1c4*x20)-c2c4*x10+4*omega*s3c4+(s1c1*s2c3)/2+(s1c2*s2c2)/2+(s1c3*s2c1)/2+(8*c3c4)/3-(c1c1*c2c3)/2-(c1c2*c2c2)/2-(c1c3*c2c1)/2,
+(-s1c4*x20)-s2c4*x10+(8*s3c4)/3-(c1c1*s2c3)/2-(c1c2*s2c2)/2-(c1c3*s2c1)/2-(c2c1*s1c3)/2-(c2c2*s1c2)/2-(c2c3*s1c1)/2-4*c3c4*omega,
+(8*x30)/3-x10*x20-(s1c4*s2c4)/2-(s1c3*s2c3)/2-(s1c2*s2c2)/2-(s1c1*s2c1)/2-(c1c4*c2c4)/2-(c1c3*c2c3)/2-(c1c2*c2c2)/2-(c1c1*c2c1)/2,
+x30+c3c1+c3c2+c3c3+c3c4-27
+],
+[
+omega,x10,x20,x30,c1c1,s1c1,c1c2,s1c2,c1c3,s1c3,c1c4,s1c4,c2c1,s2c1,c2c2,s2c2,c2c3,s2c3,c2c4,s2c4,c3c1,s3c1,c3c2,s3c2,c3c3,s3c3,c3c4,s3c4
+],
+[
+4,0,0,0,-1,0,-1,0,-1,0,-1,0,-1,0,-1,0,-1,0,-1,0,-1,0,-1,0,-1,0,-1,0
+]
+);
+/* [wxMaxima: input   end   ] */

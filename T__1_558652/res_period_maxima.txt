@@ -1,0 +1,17 @@
+
+Maxima 5.32.1 http://maxima.sourceforge.net
+using Lisp GNU Common Lisp (GCL) GCL 2.6.10 (a.k.a. GCL)
+Distributed under the GNU Public License. See the file COPYING.
+Dedicated to the memory of William Schelter.
+The function bug_report() provides bug reporting information.
+(%i1) 
+(%i2) 
+(%i3) 
+(%o3) 1.55865221116497535697447450592b0
+(%i4) 
+(%o4) -2.14737591413540895857181567408b0
+(%i5) 
+(%o5) 2.07814303677056599894967803266b0
+(%i6) 
+(%o6) 2.7000000000000007105427357601b1
+(%i7) 

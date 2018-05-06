@@ -1,0 +1,56 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [wxMaxima: input   start ] */
+display2d:false$
+x1:x10+c1c1*cos(1*omega*t)+s1c1*sin(1*omega*t)+c1c2*cos(2*omega*t)+s1c2*sin(2*omega*t)+c1c3*cos(3*omega*t)+s1c3*sin(3*omega*t)+c1c4*cos(4*omega*t)+s1c4*sin(4*omega*t)+c1c5*cos(5*omega*t)+s1c5*sin(5*omega*t)+c1c6*cos(6*omega*t)+s1c6*sin(6*omega*t)+c1c7*cos(7*omega*t)+s1c7*sin(7*omega*t)$
+x2:x20+c2c1*cos(1*omega*t)+s2c1*sin(1*omega*t)+c2c2*cos(2*omega*t)+s2c2*sin(2*omega*t)+c2c3*cos(3*omega*t)+s2c3*sin(3*omega*t)+c2c4*cos(4*omega*t)+s2c4*sin(4*omega*t)+c2c5*cos(5*omega*t)+s2c5*sin(5*omega*t)+c2c6*cos(6*omega*t)+s2c6*sin(6*omega*t)+c2c7*cos(7*omega*t)+s2c7*sin(7*omega*t)$
+x3:x30+c3c1*cos(1*omega*t)+s3c1*sin(1*omega*t)+c3c2*cos(2*omega*t)+s3c2*sin(2*omega*t)+c3c3*cos(3*omega*t)+s3c3*sin(3*omega*t)+c3c4*cos(4*omega*t)+s3c4*sin(4*omega*t)+c3c5*cos(5*omega*t)+s3c5*sin(5*omega*t)+c3c6*cos(6*omega*t)+s3c6*sin(6*omega*t)+c3c7*cos(7*omega*t)+s3c7*sin(7*omega*t)$
+assume(omega > 0)$
+delta1:trigreduce(diff(x1,t)-(10*(x2-x1)),t)$
+delta2:trigreduce(diff(x2,t)-(28*x1-x2-x1*x3),t)$
+delta3:trigreduce(diff(x3,t)-(x1*x2-8/3*x3),t)$
+expand(diff(delta1,cos(1*omega*t)));
+expand(diff(delta1,sin(1*omega*t)));
+expand(diff(delta1,cos(2*omega*t)));
+expand(diff(delta1,sin(2*omega*t)));
+expand(diff(delta1,cos(3*omega*t)));
+expand(diff(delta1,sin(3*omega*t)));
+expand(diff(delta1,cos(4*omega*t)));
+expand(diff(delta1,sin(4*omega*t)));
+expand(diff(delta1,cos(5*omega*t)));
+expand(diff(delta1,sin(5*omega*t)));
+expand(diff(delta1,cos(6*omega*t)));
+expand(diff(delta1,sin(6*omega*t)));
+expand(diff(delta1,cos(7*omega*t)));
+expand(diff(delta1,sin(7*omega*t)));
+expand(integrate(delta1,t,0,2*%pi/omega)*omega/(2*%pi));
+expand(diff(delta2,cos(1*omega*t)));
+expand(diff(delta2,sin(1*omega*t)));
+expand(diff(delta2,cos(2*omega*t)));
+expand(diff(delta2,sin(2*omega*t)));
+expand(diff(delta2,cos(3*omega*t)));
+expand(diff(delta2,sin(3*omega*t)));
+expand(diff(delta2,cos(4*omega*t)));
+expand(diff(delta2,sin(4*omega*t)));
+expand(diff(delta2,cos(5*omega*t)));
+expand(diff(delta2,sin(5*omega*t)));
+expand(diff(delta2,cos(6*omega*t)));
+expand(diff(delta2,sin(6*omega*t)));
+expand(diff(delta2,cos(7*omega*t)));
+expand(diff(delta2,sin(7*omega*t)));
+expand(integrate(delta2,t,0,2*%pi/omega)*omega/(2*%pi));
+expand(diff(delta3,cos(1*omega*t)));
+expand(diff(delta3,sin(1*omega*t)));
+expand(diff(delta3,cos(2*omega*t)));
+expand(diff(delta3,sin(2*omega*t)));
+expand(diff(delta3,cos(3*omega*t)));
+expand(diff(delta3,sin(3*omega*t)));
+expand(diff(delta3,cos(4*omega*t)));
+expand(diff(delta3,sin(4*omega*t)));
+expand(diff(delta3,cos(5*omega*t)));
+expand(diff(delta3,sin(5*omega*t)));
+expand(diff(delta3,cos(6*omega*t)));
+expand(diff(delta3,sin(6*omega*t)));
+expand(diff(delta3,cos(7*omega*t)));
+expand(diff(delta3,sin(7*omega*t)));
+expand(integrate(delta3,t,0,2*%pi/omega)*omega/(2*%pi));
+/* [wxMaxima: input   end   ] */

@@ -1,0 +1,138 @@
+
+Maxima 5.32.1 http://maxima.sourceforge.net
+using Lisp GNU Common Lisp (GCL) GCL 2.6.10 (a.k.a. GCL)
+Distributed under the GNU Public License. See the file COPYING.
+Dedicated to the memory of William Schelter.
+The function bug_report() provides bug reporting information.
+(%i1) 
+(%i2) 
+(%i3) 
+(%i4) 
+(%i5) 
+(%i6) 
+(%i7) 
+(%i8) 
+(%o8) omega*s1c1-10*c2c1+10*c1c1
+(%i9) 
+(%o9) -10*s2c1+10*s1c1-c1c1*omega
+(%i10) 
+(%o10) 2*omega*s1c2-10*c2c2+10*c1c2
+(%i11) 
+(%o11) -10*s2c2+10*s1c2-2*c1c2*omega
+(%i12) 
+(%o12) 3*omega*s1c3-10*c2c3+10*c1c3
+(%i13) 
+(%o13) -10*s2c3+10*s1c3-3*c1c3*omega
+(%i14) 
+(%o14) 4*omega*s1c4-10*c2c4+10*c1c4
+(%i15) 
+(%o15) -10*s2c4+10*s1c4-4*c1c4*omega
+(%i16) 
+(%o16) 5*omega*s1c5-10*c2c5+10*c1c5
+(%i17) 
+(%o17) -10*s2c5+10*s1c5-5*c1c5*omega
+(%i18) 
+Is omega positive or negative?
+
+(%o18) 10*x10-10*x20
+(%i19) 
+(%o19) c1c1*x30+c3c1*x10+s1c4*s3c5/2+s1c5*s3c4/2+s1c3*s3c4/2+s1c4*s3c3/2
+               +s1c2*s3c3/2+s1c3*s3c2/2+s1c1*s3c2/2+s1c2*s3c1/2+omega*s2c1
+               +c1c4*c3c5/2+c1c5*c3c4/2+c1c3*c3c4/2+c1c4*c3c3/2+c1c2*c3c3/2
+               +c1c3*c3c2/2+c1c1*c3c2/2+c1c2*c3c1/2+c2c1-28*c1c1
+(%i20) 
+(%o20) s1c1*x30+s3c1*x10+c1c4*s3c5/2-c1c5*s3c4/2+c1c3*s3c4/2-c1c4*s3c3/2
+               +c1c2*s3c3/2-c1c3*s3c2/2+c1c1*s3c2/2-c1c2*s3c1/2+s2c1
+               +c3c4*s1c5/2-c3c5*s1c4/2+c3c3*s1c4/2-c3c4*s1c3/2+c3c2*s1c3/2
+               -c3c3*s1c2/2+c3c1*s1c2/2-c3c2*s1c1/2-28*s1c1-c2c1*omega
+(%i21) 
+(%o21) c1c2*x30+c3c2*x10+s1c3*s3c5/2+s1c2*s3c4/2+s1c5*s3c3/2+s1c1*s3c3/2
+               +s1c4*s3c2/2+s1c3*s3c1/2-s1c1*s3c1/2+2*omega*s2c2+c1c3*c3c5/2
+               +c1c2*c3c4/2+c1c5*c3c3/2+c1c1*c3c3/2+c1c4*c3c2/2+c1c3*c3c1/2
+               +c1c1*c3c1/2+c2c2-28*c1c2
+(%i22) 
+(%o22) s1c2*x30+s3c2*x10+c1c3*s3c5/2+c1c2*s3c4/2-c1c5*s3c3/2+c1c1*s3c3/2
+               -c1c4*s3c2/2-c1c3*s3c1/2+c1c1*s3c1/2+s2c2+c3c3*s1c5/2
+               +c3c2*s1c4/2-c3c5*s1c3/2+c3c1*s1c3/2-c3c4*s1c2/2-28*s1c2
+               -c3c3*s1c1/2+c3c1*s1c1/2-2*c2c2*omega
+(%i23) 
+(%o23) c1c3*x30+c3c3*x10+s1c2*s3c5/2+s1c1*s3c4/2+s1c5*s3c2/2-s1c1*s3c2/2
+               +s1c4*s3c1/2-s1c2*s3c1/2+3*omega*s2c3+c1c2*c3c5/2+c1c1*c3c4/2
+               +c1c5*c3c2/2+c1c1*c3c2/2+c1c4*c3c1/2+c1c2*c3c1/2+c2c3-28*c1c3
+(%i24) 
+(%o24) s1c3*x30+s3c3*x10+c1c2*s3c5/2+c1c1*s3c4/2-c1c5*s3c2/2+c1c1*s3c2/2
+               -c1c4*s3c1/2+c1c2*s3c1/2+s2c3+c3c2*s1c5/2+c3c1*s1c4/2-28*s1c3
+               -c3c5*s1c2/2+c3c1*s1c2/2-c3c4*s1c1/2+c3c2*s1c1/2-3*c2c3*omega
+(%i25) 
+(%o25) c1c4*x30+c3c4*x10+s1c1*s3c5/2-s1c1*s3c3/2-s1c2*s3c2/2+s1c5*s3c1/2
+               -s1c3*s3c1/2+4*omega*s2c4+c1c1*c3c5/2+c1c1*c3c3/2+c1c2*c3c2/2
+               +c1c5*c3c1/2+c1c3*c3c1/2+c2c4-28*c1c4
+(%i26) 
+(%o26) s1c4*x30+s3c4*x10+c1c1*s3c5/2+c1c1*s3c3/2+c1c2*s3c2/2-c1c5*s3c1/2
+               +c1c3*s3c1/2+s2c4+c3c1*s1c5/2-28*s1c4+c3c1*s1c3/2+c3c2*s1c2/2
+               -c3c5*s1c1/2+c3c3*s1c1/2-4*c2c4*omega
+(%i27) 
+(%o27) c1c5*x30+c3c5*x10-s1c1*s3c4/2-s1c2*s3c3/2-s1c3*s3c2/2-s1c4*s3c1/2
+               +5*omega*s2c5+c1c1*c3c4/2+c1c2*c3c3/2+c1c3*c3c2/2+c1c4*c3c1/2
+               +c2c5-28*c1c5
+(%i28) 
+(%o28) s1c5*x30+s3c5*x10+c1c1*s3c4/2+c1c2*s3c3/2+c1c3*s3c2/2+c1c4*s3c1/2+s2c5
+               -28*s1c5+c3c1*s1c4/2+c3c2*s1c3/2+c3c3*s1c2/2+c3c4*s1c1/2
+               -5*c2c5*omega
+(%i29) 
+Is omega positive or negative?
+
+(%o29) x10*x30+x20-28*x10+s1c5*s3c5/2+s1c4*s3c4/2+s1c3*s3c3/2+s1c2*s3c2/2
+              +s1c1*s3c1/2+c1c5*c3c5/2+c1c4*c3c4/2+c1c3*c3c3/2+c1c2*c3c2/2
+              +c1c1*c3c1/2
+(%i30) 
+(%o30) -c1c1*x20-c2c1*x10+omega*s3c1-s1c4*s2c5/2-s1c5*s2c4/2-s1c3*s2c4/2
+                -s1c4*s2c3/2-s1c2*s2c3/2-s1c3*s2c2/2-s1c1*s2c2/2-s1c2*s2c1/2
+                +8*c3c1/3-c1c4*c2c5/2-c1c5*c2c4/2-c1c3*c2c4/2-c1c4*c2c3/2
+                -c1c2*c2c3/2-c1c3*c2c2/2-c1c1*c2c2/2-c1c2*c2c1/2
+(%i31) 
+(%o31) -s1c1*x20-s2c1*x10+8*s3c1/3-c1c4*s2c5/2+c1c5*s2c4/2-c1c3*s2c4/2
+                +c1c4*s2c3/2-c1c2*s2c3/2+c1c3*s2c2/2-c1c1*s2c2/2+c1c2*s2c1/2
+                -c2c4*s1c5/2+c2c5*s1c4/2-c2c3*s1c4/2+c2c4*s1c3/2-c2c2*s1c3/2
+                +c2c3*s1c2/2-c2c1*s1c2/2+c2c2*s1c1/2-c3c1*omega
+(%i32) 
+(%o32) -c1c2*x20-c2c2*x10+2*omega*s3c2-s1c3*s2c5/2-s1c2*s2c4/2-s1c5*s2c3/2
+                -s1c1*s2c3/2-s1c4*s2c2/2-s1c3*s2c1/2+s1c1*s2c1/2+8*c3c2/3
+                -c1c3*c2c5/2-c1c2*c2c4/2-c1c5*c2c3/2-c1c1*c2c3/2-c1c4*c2c2/2
+                -c1c3*c2c1/2-c1c1*c2c1/2
+(%i33) 
+(%o33) -s1c2*x20-s2c2*x10+8*s3c2/3-c1c3*s2c5/2-c1c2*s2c4/2+c1c5*s2c3/2
+                -c1c1*s2c3/2+c1c4*s2c2/2+c1c3*s2c1/2-c1c1*s2c1/2-c2c3*s1c5/2
+                -c2c2*s1c4/2+c2c5*s1c3/2-c2c1*s1c3/2+c2c4*s1c2/2+c2c3*s1c1/2
+                -c2c1*s1c1/2-2*c3c2*omega
+(%i34) 
+(%o34) -c1c3*x20-c2c3*x10+3*omega*s3c3-s1c2*s2c5/2-s1c1*s2c4/2-s1c5*s2c2/2
+                +s1c1*s2c2/2-s1c4*s2c1/2+s1c2*s2c1/2+8*c3c3/3-c1c2*c2c5/2
+                -c1c1*c2c4/2-c1c5*c2c2/2-c1c1*c2c2/2-c1c4*c2c1/2-c1c2*c2c1/2
+(%i35) 
+(%o35) -s1c3*x20-s2c3*x10+8*s3c3/3-c1c2*s2c5/2-c1c1*s2c4/2+c1c5*s2c2/2
+                -c1c1*s2c2/2+c1c4*s2c1/2-c1c2*s2c1/2-c2c2*s1c5/2-c2c1*s1c4/2
+                +c2c5*s1c2/2-c2c1*s1c2/2+c2c4*s1c1/2-c2c2*s1c1/2-3*c3c3*omega
+(%i36) 
+(%o36) -c1c4*x20-c2c4*x10+4*omega*s3c4-s1c1*s2c5/2+s1c1*s2c3/2+s1c2*s2c2/2
+                -s1c5*s2c1/2+s1c3*s2c1/2+8*c3c4/3-c1c1*c2c5/2-c1c1*c2c3/2
+                -c1c2*c2c2/2-c1c5*c2c1/2-c1c3*c2c1/2
+(%i37) 
+(%o37) -s1c4*x20-s2c4*x10+8*s3c4/3-c1c1*s2c5/2-c1c1*s2c3/2-c1c2*s2c2/2
+                +c1c5*s2c1/2-c1c3*s2c1/2-c2c1*s1c5/2-c2c1*s1c3/2-c2c2*s1c2/2
+                +c2c5*s1c1/2-c2c3*s1c1/2-4*c3c4*omega
+(%i38) 
+(%o38) -c1c5*x20-c2c5*x10+5*omega*s3c5+s1c1*s2c4/2+s1c2*s2c3/2+s1c3*s2c2/2
+                +s1c4*s2c1/2+8*c3c5/3-c1c1*c2c4/2-c1c2*c2c3/2-c1c3*c2c2/2
+                -c1c4*c2c1/2
+(%i39) 
+(%o39) -s1c5*x20-s2c5*x10+8*s3c5/3-c1c1*s2c4/2-c1c2*s2c3/2-c1c3*s2c2/2
+                -c1c4*s2c1/2-c2c1*s1c4/2-c2c2*s1c3/2-c2c3*s1c2/2-c2c4*s1c1/2
+                -5*c3c5*omega
+(%i40) 
+Is omega positive or negative?
+
+(%o40) 8*x30/3-x10*x20-s1c5*s2c5/2-s1c4*s2c4/2-s1c3*s2c3/2-s1c2*s2c2/2
+              -s1c1*s2c1/2-c1c5*c2c5/2-c1c4*c2c4/2-c1c3*c2c3/2-c1c2*c2c2/2
+              -c1c1*c2c1/2
+(%i41) 

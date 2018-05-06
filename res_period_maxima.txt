@@ -1,0 +1,15 @@
+Maxima 5.41.0 http://maxima.sourceforge.net
+using Lisp SBCL 1.4.0-0.1.el7.bootstrap
+Distributed under the GNU Public License. See the file COPYING.
+Dedicated to the memory of William Schelter.
+The function bug_report() provides bug reporting information.
+(%i1) 
+(%i2) 
+(%o2) 2.034483797296787b2
+(%i3) 
+(%o3) -1.176490199814569b1
+(%i4) 
+(%o4) -1.286582200283012b1
+(%i5) 
+(%o5) 2.7b1
+(%i6) 

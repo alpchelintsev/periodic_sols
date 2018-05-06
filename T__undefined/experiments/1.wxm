@@ -1,0 +1,25 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [wxMaxima: input   start ] */
+display2d:false$
+load(mnewton);
+mnewton(
+[
+omega*s1c1-10*c2c1+10*c1c1,
+(-10*s2c1)+10*s1c1-c1c1*omega,
+10*x10-10*x20,
+c1c1*x30+c3c1*x10+omega*s2c1+c2c1-28*c1c1,
+s1c1*x30+s3c1*x10+s2c1-28*s1c1-c2c1*omega,
+x10*x30+x20-28*x10+(s1c1*s3c1)/2+(c1c1*c3c1)/2,
+(-c1c1*x20)-c2c1*x10+omega*s3c1+(8*c3c1)/3,
+(-s1c1*x20)-s2c1*x10+(8*s3c1)/3-c3c1*omega,
+(8*x30)/3-x10*x20-(s1c1*s2c1)/2-(c1c1*c2c1)/2,
+x30+c3c1-27
+],
+[
+omega,x10,x20,x30,c1c1,s1c1,c2c1,s2c1,c3c1,s3c1
+],
+[
+4,0,0,0,-1,0,-1,0,-1,0
+]
+);
+/* [wxMaxima: input   end   ] */

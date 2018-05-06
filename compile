@@ -1,0 +1,7 @@
+#!/bin/sh
+
+g++ -c maxima.cpp periodic_sols.cpp init_newton.cpp calc_init_point.cpp
+g++ maxima.o periodic_sols.o -o periodic_sols
+g++ maxima.o init_newton.o -o init_newton
+g++ maxima.o calc_init_point.o -o calc_init_point
+rm -f *.o
