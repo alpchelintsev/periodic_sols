@@ -1,7 +1,8 @@
 #!/bin/sh
 
-g++ -c maxima.cpp periodic_sols.cpp init_newton.cpp calc_init_point.cpp
-g++ maxima.o periodic_sols.o -o periodic_sols
+g++ -c maxima.cpp periodic_sols_fast.cpp init_newton.cpp calc_init_point.cpp calc_init_point2.cpp -std=gnu++11
+g++ periodic_sols_fast.o -o periodic_sols_fast
 g++ maxima.o init_newton.o -o init_newton
 g++ maxima.o calc_init_point.o -o calc_init_point
+g++ maxima.o calc_init_point2.o -o calc_init_point2
 rm -f *.o
